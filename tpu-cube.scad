@@ -6,6 +6,7 @@ HINGE_OFFSET=0.15+HINGE_THICKNESS/2;
 HINGE_NOTCH=0.4;
 HINGE_WIDTH=CUBE_SIZE-CURVE_RADIUS*2;
 
+// stolen from https://gist.github.com/groovenectar/292db1688b79efd6ce11
 module roundedcube(size = [1, 1, 1], center = false, radius = 0.5) {
 	// If single value, convert to [x, y, z] vector
 	size = (size[0] == undef) ? [size, size, size] : size;
